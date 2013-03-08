@@ -1,0 +1,132 @@
+{
+    "status": "success",
+    "message": null,
+    "tables": {
+        "TBCUSTOMERS": {
+            "columns": {
+                "EMAIL_ALL_RECEIPT": {
+                    "id": "EMAIL_ALL_RECEIPT",
+                    "name": null,
+                    "field": "EMAIL_ALL_RECEIPT",
+                    "type": "Boolean",
+                    "width": "9",
+                    "sortable": null,
+                    "show": "Y",
+                    "mask": "",
+                    "order": null,
+                    "maxChar": "1",
+                    "sendServer": "Y",
+                    "editablecolumn": null
+                },
+                "CUSTOMER_ID": {
+                    "id": "CUSTOMER_ID",
+                    "name": null,
+                    "field": "CUSTOMER_ID",
+                    "type": "Integer",
+                    "width": "9",
+                    "sortable": null,
+                    "show": "Y",
+                    "mask": "##0",
+                    "order": null,
+                    "maxChar": "1",
+                    "sendServer": "Y",
+                    "editablecolumn": null
+                },
+                "PICTURE_ID": {
+                    "id": "PICTURE_ID",
+                    "name": null,
+                    "field": "PICTURE_ID",
+                    "type": "Integer",
+                    "width": "9",
+                    "sortable": null,
+                    "show": "Y",
+                    "mask": "##0",
+                    "order": null,
+                    "maxChar": "1",
+                    "sendServer": "Y",
+                    "editablecolumn": null
+                }
+            },
+            "primary-keys": [],
+            "multi-select": false,
+            "send": "Y"
+        },
+        "TBCUSTCARD": {
+            "columns": {
+                "CUST_CARD_ID": {
+                    "id": "CUST_CARD_ID",
+                    "name": "CUST_CARD_ID",
+                    "field": "CUST_CARD_ID",
+                    "type": "Integer",
+                    "width": "9",
+                    "sortable": "true",
+                    "show": "N",
+                    "mask": "~~0",
+                    "order": null,
+                    "maxChar": "1",
+                    "sendServer": "Y",
+                    "editablecolumn": null
+                },
+                "SETUP_TENDER_ID": {
+                    "id": "SETUP_TENDER_ID",
+                    "name": "SETUP_TENDER_ID",
+                    "field": "SETUP_TENDER_ID",
+                    "type": "Integer",
+                    "width": "9",
+                    "sortable": "true",
+                    "show": "N",
+                    "mask": "~~0",
+                    "order": null,
+                    "maxChar": "1",
+                    "sendServer": "Y",
+                    "editablecolumn": null
+                },
+                "CUSTOMER_ID": {
+                    "id": "CUSTOMER_ID",
+                    "name": "CUSTOMER_ID",
+                    "field": "CUSTOMER_ID",
+                    "type": "Integer",
+                    "width": "9",
+                    "sortable": "true",
+                    "show": "N",
+                    "mask": "~~0",
+                    "order": null,
+                    "maxChar": "1",
+                    "sendServer": "Y",
+                    "editablecolumn": null
+                }
+            },
+            "primary-keys": [],
+            "multi-select": false,
+            "send": "Y"
+        }
+    },
+    "preferences": [],
+    "mods": {
+        "TBCUSTOMERS": {
+            "create": [
+                {
+                    "fields": {
+                        "EMAIL_ALL_RECEIPT": "N",
+                        "CUSTOMER_ID": 3,
+                        "PICTURE_ID": null
+                    }
+                }
+            ]
+        },
+        "TBCUSTCARD": {
+            "update": [
+                {
+                	"identifier": {
+                		"heh": []
+                	},
+                    "fields": {
+                        "CUST_CARD_ID": 109,
+                        "SETUP_TENDER_ID": null,
+                        "CUSTOMER_ID": 3
+                    }
+                }
+            ]
+        }
+    }
+}
